@@ -106,7 +106,12 @@ header .header-container {
     width: 100%;
 }
 
-header head p {
+header #logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header #logo-container p {
     margin-left: 0.5rem;
     font-size: 1.2rem;
     color: var(--secondary-color);
