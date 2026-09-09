@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 
     header {
         width: 70%;
@@ -26,13 +26,10 @@
         width: 100%;
     }
 
-    nav li {
+    nav a {
         padding: 0;
     }
 
-    nav li a{
-        padding: 0;
-    }
     main {
         width:70%;
         margin: 0 auto;

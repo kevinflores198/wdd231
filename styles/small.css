@@ -18,6 +18,7 @@ body {
     --accent-color: #ff8737;
     --second-accent-color: #fb9653;
     --font-family: 'Montserrat', sans-serif;
+    --progress: rgb(255, 255, 142);
 }
 
 p {
@@ -26,25 +27,20 @@ p {
     color: var(--secondary-color);
 }
 
-li {
-    font-size: 1rem;
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
-    list-style-type: none;
-    padding: 0.5rem 1rem;
-
-}
-
 a {
     color: var(--secondary-color);
     text-decoration: none;
     transition: color 0.3s ease;
     border-radius: 20px;
-    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    padding: 1.5rem;
+
 }
 
 a:hover {
-    background-color: var(--accent-color);
+    text-decoration: underline;
     transition: background-color 0.3s ease;
 }
 
@@ -62,6 +58,7 @@ h6 {
     font-size: 2rem;
     font-weight: bold;
     color: var(--accent-color);
+    border-radius: 100%;
 }
 
 .card img {
@@ -97,6 +94,12 @@ header {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#nav-links a.current {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 header .header-container {
@@ -172,8 +175,6 @@ h1 {
 
 .card h2 {
     border-radius: 20px 20px 0 0;
-
-    color: var(--primary-color);
     margin-bottom: 1rem;
     padding: 1rem;
     background-color: var(--second-accent-color);
@@ -184,6 +185,11 @@ h1 {
     padding: 0 1.5rem 1.5rem;
 }
 
+.card img {
+    border-radius: 40px;
+    padding: 2rem;
+}
+
 .btn-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -192,8 +198,53 @@ h1 {
     padding: 0 1.5rem 1.5rem;
 }
 
-.btn4, .btn5, .btn6{
+.btn.active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+.btn1,
+.btn2,
+.btn3 {
+    color: var(--secondary-color);
+
+}
+
+.btn4,
+.btn5,
+.btn6 {
+    color: var(--secondary-color);
+
     grid-column: 1 / 4;
+}
+
+.course-card {
+    background-color: var(--progress);
+    padding: .5rem;
+    border-radius: 12px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    text-align: center;
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.course-card p {
+    padding: 0;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.card p{
+    text-align: center;
+}
+
+.course-card.completed {
+    background-color: var(--second-accent-color);
 }
 
 footer {
@@ -203,6 +254,7 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
 footer i {
     color: var(--secondary-color);
     margin-right: 0.5rem;
