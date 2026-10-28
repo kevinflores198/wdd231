@@ -139,8 +139,7 @@ header nav {
     margin-top: 0.5rem;
     padding: 1rem;
     transition: max-height 0.4s ease, opacity 0.3s ease;
-    visibility: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s;
+
 }
 
 header nav.show {
