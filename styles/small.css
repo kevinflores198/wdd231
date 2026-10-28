@@ -64,7 +64,9 @@ h6 {
 .card img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 40px;
+    padding: 2rem;
+
 }
 
 .btn {
@@ -86,7 +88,6 @@ header {
     background-color: var(--second-accent-color);
     padding: 1rem;
     text-align: center;
-    position: relative;
     width: 85%;
     margin: 0 auto;
     border-radius: 50px;
@@ -193,12 +194,10 @@ h1 {
 .card p {
     color: var(--primary-color);
     padding: 0 1.5rem 1.5rem;
+    text-align: center;
+
 }
 
-.card img {
-    border-radius: 40px;
-    padding: 2rem;
-}
 
 .btn-container {
     display: grid;
@@ -246,10 +245,6 @@ h1 {
 .course-card p {
     padding: 0;
     color: var(--secondary-color);
-    text-align: center;
-}
-
-.card p{
     text-align: center;
 }
 
