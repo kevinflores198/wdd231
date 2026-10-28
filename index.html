@@ -16,8 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/script.js"></script>
-    <script src="https://kit.fontawesome.com/92dadc1c6f.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="https://kit.fontawesome.com/92dadc1c6f.js"></script>
     <script defer src="scripts/courses.js"></script>
 </head>
 
@@ -28,7 +28,7 @@
                 <img src="images/logo-light.svg" alt="Logo" id="logo" width="30" height="30">
                 <span>Kevin Flores</span>
             </div>
-            <div id="burger">☰</div>
+            <button id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">☰</button>
         </div>
         <div id="nav-container">
             <nav id="nav-links">
@@ -54,7 +54,7 @@
 
         <section class="card card2">
             <h2>Student photo</h2>
-            <img src="images/avatar.png" alt="My profile picture">
+            <img src="images/avatar.webp" alt="My profile picture">
         </section>
 
         <section class="card card3">
@@ -70,9 +70,9 @@
     </main>
     <footer>
         <div>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-github"></i>
+            <a target="_blank" href="https://www.instagram.com/kevo198_?obrf=eW5jZ3dxaTN5aHQ4&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/kevinfloresg/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://github.com/kevinflores198"><i class="fa-brands fa-github"></i></a>
         </div>
         <p>&copy; <span id="currentyear"></span> Kevin Flores - Buenos Aires, Argentina</p>
         <p><span id="lastmodified"></span></p>
