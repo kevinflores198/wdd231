@@ -1,0 +1,24 @@
+{
+    "familyName": "Kevin",
+    "movedToWard": "10-02-2023",
+    "numberOfPeople": 5,
+    "visited": false,
+    "memberData":[
+        {
+        "name": "Jhon Jhonson",
+        "age":35
+        },
+        {
+        "name": "Marry Jhonson", 
+        "age":37
+        },
+        {
+        "name": "Sam Jhonson", 
+        "age":12
+        },
+        {
+        "name": "Peter Jhonson", 
+        "age":10
+        }
+        ]
+}
