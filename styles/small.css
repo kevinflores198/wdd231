@@ -10,6 +10,7 @@ body {
     color: var(--secondary-color);
     line-height: 1.6;
     font-size: 16px;
+    font-family: "Nunito Sans", system-ui, sans-serif;
 }
 
 :root {
