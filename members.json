@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Palermo Coffee Roasters",
+      "address": "Av. Santa Fe 3450, Palermo, Buenos Aires",
+      "phone": "+54 11 5555-0101",
+      "website": "https://example.com/palermo-coffee",
+      "image": "palermo-coffee.webp",
+      "membership": 3,
+      "description": "Small-batch coffee roasted every morning, with a cafe and a bean shop."
+    },
+    {
+      "name": "Recoleta Legal Partners",
+      "address": "Av. Callao 1280, Recoleta, Buenos Aires",
+      "phone": "+54 11 5555-0102",
+      "website": "https://example.com/recoleta-legal",
+      "image": "recoleta-legal.webp",
+      "membership": 2,
+      "description": "Business law and contracts for small companies and new entrepreneurs."
+    },
+    {
+      "name": "Mate & Co. Market",
+      "address": "Defensa 820, San Telmo, Buenos Aires",
+      "phone": "+54 11 5555-0103",
+      "website": "https://example.com/mate-market",
+      "image": "mate-market.webp",
+      "membership": 1,
+      "description": "Local yerba mate, gourds, and gifts made by Argentine artisans."
+    },
+    {
+      "name": "San Telmo Tango Academy",
+      "address": "Humberto 1 1150, San Telmo, Buenos Aires",
+      "phone": "+54 11 5555-0104",
+      "website": "https://example.com/tango-academy",
+      "image": "tango-academy.webp",
+      "membership": 3,
+      "description": "Tango classes for every level, plus weekly milongas for the community."
+    },
+    {
+      "name": "Costanera Fitness Center",
+      "address": "Av. Costanera Rafael Obligado 600, Buenos Aires",
+      "phone": "+54 11 5555-0105",
+      "website": "https://example.com/costanera-fitness",
+      "image": "costanera-fitness.webp",
+      "membership": 2,
+      "description": "A modern gym with outdoor training and classes next to the river."
+    },
+    {
+      "name": "Belgrano Family Dental",
+      "address": "Av. Cabildo 2150, Belgrano, Buenos Aires",
+      "phone": "+54 11 5555-0106",
+      "website": "https://example.com/belgrano-dental",
+      "image": "belgrano-dental.webp",
+      "membership": 1,
+      "description": "Friendly dental care for children and adults, with evening appointments."
+    },
+    {
+      "name": "Puerto Madero Cargo",
+      "address": "Olga Cossettini 1050, Puerto Madero, Buenos Aires",
+      "phone": "+54 11 5555-0107",
+      "website": "https://example.com/puerto-cargo",
+      "image": "puerto-cargo.webp",
+      "membership": 3,
+      "description": "Delivery and logistics for online stores across the city and the country."
+    }
+  ]
+}

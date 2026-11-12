@@ -1,0 +1,82 @@
+@media screen and (min-width: 48rem) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 2rem;
+    }
+
+    .header-inner {
+        padding: 0.75rem 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .site-nav {
+        position: static;
+        flex-direction: row;
+        gap: 0.25rem;
+        max-height: none;
+        overflow: visible;
+        background-color: transparent;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .site-nav a {
+        padding: 0.5rem 1rem;
+        border-top: 0;
+        border-radius: 999px;
+    }
+
+    main {
+        padding: 2.5rem 2rem 3rem;
+    }
+
+    .page-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .members.list .member-card {
+        grid-template-columns: 1.4fr 1.6fr 1.1fr 1.2fr;
+        grid-template-areas:
+            "name address phone site"
+            "badge description description description";
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+
+    .members.list .member-name {
+        grid-area: name;
+    }
+
+    .members.list .badge {
+        grid-area: badge;
+    }
+
+    .members.list .member-description {
+        grid-area: description;
+    }
+
+    .members.list .member-address {
+        grid-area: address;
+    }
+
+    .members.list .member-phone {
+        grid-area: phone;
+    }
+
+    .members.list .member-site {
+        grid-area: site;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

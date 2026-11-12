@@ -1,0 +1,260 @@
+:root {
+    --navy: #0B2545;
+    --sky: #74ACDF;
+    --sky-light: #EAF3FB;
+    --gold: #F6B40E;
+    --white: #FFFFFF;
+    --border: #C5D6E8;
+    --radius: 0.75rem;
+}
+
+body {
+    background-color: var(--sky-light);
+    color: var(--navy);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+:focus-visible {
+    outline: 3px solid var(--navy);
+    outline-offset: 2px;
+}
+
+/* Header and navigation */
+header {
+    position: relative;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+header :focus-visible,
+footer :focus-visible {
+    outline-color: var(--gold);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.brand img {
+    flex-shrink: 0;
+}
+
+.menu-button {
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 2px solid var(--white);
+    border-radius: var(--radius);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--navy);
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+.site-nav.open {
+    max-height: 20rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.site-nav a {
+    padding: 0.85rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-nav a:hover {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+.site-nav a[aria-current="page"] {
+    background-color: var(--sky);
+    color: var(--navy);
+}
+
+/* Main content */
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+}
+
+.page-heading h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.view-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.25rem 0 0.75rem;
+    font-weight: 600;
+}
+
+.view-controls button {
+    min-width: 5rem;
+    min-height: 2.75rem;
+    padding: 0 1.25rem;
+    border: 2px solid var(--navy);
+    border-radius: 999px;
+    background-color: var(--white);
+    color: var(--navy);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-controls button[aria-pressed="true"] {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.members-message {
+    margin-bottom: 0.75rem;
+}
+
+/* Member cards */
+.members {
+    display: grid;
+    gap: 1rem;
+}
+
+.members.grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+
+.member-card {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px rgba(11, 37, 69, 0.12);
+}
+
+.member-image {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 1rem;
+}
+
+.member-card h2,
+.member-card p {
+    margin: 0;
+}
+
+.member-name {
+    font-size: 1.25rem;
+}
+
+.badge {
+    justify-self: start;
+    padding: 0.15rem 0.75rem;
+    border: 1px solid var(--navy);
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.badge-1 {
+    background-color: var(--sky-light);
+}
+
+.badge-2 {
+    background-color: #D9DEE5;
+}
+
+.badge-3 {
+    background-color: var(--gold);
+}
+
+.member-card a {
+    display: inline-block;
+    padding: 0.35rem 0;
+    color: var(--navy);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.members.list .member-image {
+    display: none;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 1rem;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.footer-content {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+footer h2 {
+    margin-bottom: 0.5rem;
+    color: var(--gold);
+    font-size: 1.1rem;
+}
+
+footer p {
+    margin: 0 0 0.5rem;
+}
+
+footer a {
+    display: inline-block;
+    padding: 0.2rem 0;
+    color: var(--white);
+}
+
+address {
+    font-style: normal;
+}
