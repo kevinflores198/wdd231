@@ -6,7 +6,7 @@ const listButton = document.getElementById("list-button");
 const levelNames = { 1: "Member", 2: "Silver", 3: "Gold" };
 
 async function getMembers() {
-    const response = await fetch("members.json");
+    const response = await fetch("data/members.json");
 
     if (!response.ok) {
         throw new Error(`The members file could not be loaded (status ${response.status}).`);
