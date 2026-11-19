@@ -16,10 +16,6 @@ body {
     line-height: 1.6;
 }
 
-main {
-    display: block;
-}
-
 h1,
 h2 {
     line-height: 1.2;
@@ -70,7 +66,7 @@ footer :focus-visible {
     height: 2.75rem;
     border: 2px solid var(--white);
     border-radius: var(--radius);
-    background-color: transparent;
+    background-color: #ffffff00;
     color: var(--white);
     font-size: 1.5rem;
     line-height: 1;
@@ -120,6 +116,7 @@ footer :focus-visible {
 
 
 main {
+    display: block;
     max-width: 70rem;
     margin: 0 auto;
     padding: 1.5rem 1rem 2rem;
