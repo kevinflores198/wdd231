@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenos Aires Chamber of Commerce – Home</title>
+    <meta name="description" content="Welcome to the Buenos Aires Chamber of Commerce. Find local events, the weather, and spotlights of member businesses.">
+    <meta name="author" content="kevin nicolas flores gonzalez">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Buenos Aires Chamber of Commerce – Home">
+    <meta property="og:description" content="Local events, the weather, and spotlights of member businesses in Buenos Aires.">
+    <meta property="og:image" content="https://kevinflores198.github.io/wdd231/chamber/images/chamber-og.jpg">
+    <meta property="og:image:alt" content="Buenos Aires Chamber of Commerce">
+    <meta property="og:url" content="https://kevinflores198.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize-directory.css">
+    <link rel="stylesheet" href="styles/small-directory.css">
+    <link rel="stylesheet" href="styles/larger-directory.css">
+    <script defer src="scripts/navigation-directory.js"></script>
+    <script defer src="scripts/getdate-directory.js"></script>
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="" width="48" height="48">
+                <span>Buenos Aires Chamber of Commerce</span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="home">
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 48rem)" srcset="images/hero-large.webp" width="1600" height="640">
+                <img src="images/hero-small.webp" alt="Illustration of the Buenos Aires skyline and the Obelisco at sunset" width="800" height="600" fetchpriority="high">
+            </picture>
+            <div class="hero-content">
+                <h1>Welcome to the Buenos Aires Chamber of Commerce</h1>
+                <p>Connecting local businesses and growing our community.</p>
+                <a class="cta" href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-content">
+            <section class="panel" aria-labelledby="events-title">
+                <h2 id="events-title">Upcoming events</h2>
+                <ul class="event-list">
+                    <li>
+                        <strong>Business Networking Night</strong>
+                        <time datetime="2026-12-04">Friday, December 4</time> at 7:00 pm, Chamber Hall
+                    </li>
+                    <li>
+                        <strong>Small Business Workshop: Online Marketing</strong>
+                        <time datetime="2026-12-12">Saturday, December 12</time> at 10:00 am, Chamber Hall
+                    </li>
+                    <li>
+                        <strong>Holiday Market of Local Members</strong>
+                        <time datetime="2026-12-19">Saturday, December 19</time> at 11:00 am, Plaza Serrano
+                    </li>
+                </ul>
+            </section>
+
+            <section class="panel" aria-labelledby="weather-title">
+                <h2 id="weather-title">Weather in Buenos Aires</h2>
+                <p id="weather-message" class="weather-message" role="status"></p>
+                <div id="current-weather" class="current-weather"></div>
+                <h3>3-day forecast</h3>
+                <ul id="forecast" class="forecast"></ul>
+            </section>
+
+            <section class="spotlights" aria-labelledby="spotlights-title">
+                <h2 id="spotlights-title">Member spotlights</h2>
+                <p id="spotlight-message" role="status"></p>
+                <div id="spotlight-list" class="spotlight-list"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <section>
+                <h2>Contact us</h2>
+                <address>
+                    Av. de Mayo 1100<br>
+                    Buenos Aires, Argentina<br>
+                    <a href="tel:+541155550100">+54 11 5555-0100</a><br>
+                    <a href="mailto:info@example.com">info@example.com</a>
+                </address>
+            </section>
+            <section>
+                <h2>Site information</h2>
+                <p>&copy; <span id="currentyear"></span> Kevin Nicolas Flores Gonzalez</p>
+                <p>WDD 231 - Frontend Web Development I</p>
+                <p id="lastmodified"></p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

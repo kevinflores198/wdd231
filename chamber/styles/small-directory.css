@@ -11,9 +11,13 @@
 body {
     background-color: var(--sky-light);
     color: var(--navy);
-    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
+    font-family: "Nunito Sans", system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    display: block;
 }
 
 h1,
@@ -26,7 +30,7 @@ h2 {
     outline-offset: 2px;
 }
 
-/* Header and navigation */
+
 header {
     position: relative;
     background-color: var(--navy);
@@ -97,7 +101,7 @@ footer :focus-visible {
 
 .site-nav a {
     padding: 0.85rem 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid #ffffff40;
     color: var(--white);
     font-weight: 600;
     text-decoration: none;
@@ -114,12 +118,11 @@ footer :focus-visible {
     color: var(--navy);
 }
 
-/* Main content */
+
 main {
     max-width: 70rem;
     margin: 0 auto;
     padding: 1.5rem 1rem 2rem;
-    display: block;
 }
 
 .page-heading h1 {
@@ -158,7 +161,7 @@ main {
     margin-bottom: 0.75rem;
 }
 
-/* Member cards */
+
 .members {
     display: grid;
     gap: 1rem;
@@ -168,7 +171,8 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
 }
 
-.member-card {
+.member-card,
+.panel {
     display: grid;
     align-content: start;
     gap: 0.5rem;
@@ -176,7 +180,7 @@ main {
     background-color: var(--white);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    box-shadow: 0 2px 6px rgba(11, 37, 69, 0.12);
+    box-shadow: 0 2px 6px #0b25451f;
 }
 
 .member-image {
@@ -227,7 +231,122 @@ main {
     display: none;
 }
 
-/* Footer */
+
+main.home {
+    max-width: none;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background-color: #0b2545b3;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.hero-content p {
+    margin: 0;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    border-radius: 999px;
+    background-color: var(--gold);
+    color: var(--navy);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: var(--white);
+}
+
+.home-content {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+}
+
+.panel h2,
+.spotlights h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.5rem;
+}
+
+.panel h3 {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+.event-list,
+.forecast {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.event-list li,
+.forecast li {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.event-list strong,
+.forecast strong {
+    display: block;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-weather p,
+.weather-message {
+    margin: 0;
+}
+
+.current-temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.spotlight-list {
+    display: grid;
+    gap: 1rem;
+}
+
+
 footer {
     padding: 1.5rem 1rem;
     background-color: var(--navy);
